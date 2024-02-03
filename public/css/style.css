@@ -1,0 +1,58 @@
+:root {
+    /* first set */
+    --page-background: rgb(237, 217, 184);
+    --body-background: rgb(32, 21, 11);
+    /* second set */
+    /* --page-background: rgb(229, 229, 229); */
+    /* --page-background: rgb(232, 241, 251); */
+    /* --body-background: rgb(14, 16, 39); */
+}
+
+body,
+html {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-background);
+    flex-direction: column;
+}
+
+.main-div {
+    background-color: var(--body-background);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.quran-pages {
+    /* background-color: rgb(213, 195, 168); */
+    background-color: var(--page-background);
+    width: 35vw;
+    border: rgb(179, 163, 143) solid 4px;
+}
+
+@media screen and (max-width:1200px) {
+    .quran-pages {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .quran-pages {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .quran-pages {
+        width: 95vw;
+    }
+}
