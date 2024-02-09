@@ -5,6 +5,9 @@ const app = express();
 const root = path.join(__dirname);
 const port = process.env.PORT||4150 
 
+// middleware
+const visitCountMiddleware = require('./middleware/visitCountMiddleware');
+
 // !important 
 app.use(express.static('public'));
 
@@ -14,6 +17,7 @@ app.use(express.urlencoded({ extended: true }))
 // built in middleware for json
 app.use(express.json());
 
+app.use(visitCountMiddleware);
 app.get('/', (req, res) => {
     res.sendFile(path.join('public', 'views', 'index.html'), { root: root })
   })
