@@ -1,0 +1,1 @@
+URL: https://readquran.live/
