@@ -9,7 +9,9 @@ function readCountFile(callback) {
         if (err) {
             return callback(err);
         }
-        const count = parseInt(data);
+        // Trim whitespace and parse
+        const trimmedData = data.trim();
+        const count = parseInt(trimmedData);
         if (isNaN(count)) {
             return callback(new Error('Invalid count data'));
         }
@@ -30,7 +32,9 @@ function readBackupFile(callback) {
         if (err) {
             return callback(err);
         }
-        const count = parseInt(data);
+        // Trim whitespace and parse
+        const trimmedData = data.trim();
+        const count = parseInt(trimmedData);
         if (isNaN(count)) {
             return callback(new Error('Invalid backup data'));
         }
