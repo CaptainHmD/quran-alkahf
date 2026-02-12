@@ -1,86 +1,95 @@
 :root {
-    --page-background: rgb(236, 219, 190);
-    --body-background: rgb(146, 108, 71);
+  --page-background: rgb(236, 219, 190);
+  --body-background: rgb(146, 108, 71);
 }
 
 body,
 html {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--body-background);
-    flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-background);
+  flex-direction: column;
 }
-.theme-title{
-    color: white;
+.theme-title {
+  color: white;
 }
-.themes{
-    border: solid white 2px;
-    color: white;
-    padding: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;  
-    border-radius: 50%;
-    transform: rotate(45deg); 
+.themes {
+  border: solid white 2px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 50%;
+  transform: rotate(45deg);
 }
 .themes:active {
-    border-style: outset;
-  }
-.themes:nth-child(1){
-    background: linear-gradient(to right, rgb(237, 217, 184) 50%, rgb(32, 21, 11) 50%);
+  border-style: outset;
+}
+.themes:nth-child(1) {
+  background: linear-gradient(
+    to right,
+    rgb(237, 217, 184) 50%,
+    rgb(32, 21, 11) 50%
+  );
 }
 
-.themes:nth-child(2){
-    background: linear-gradient(to right, rgb(229, 229, 229) 50%, rgb(14, 16, 39) 50%);
-
+.themes:nth-child(2) {
+  background: linear-gradient(
+    to right,
+    rgb(229, 229, 229) 50%,
+    rgb(14, 16, 39) 50%
+  );
 }
 
-.themes:nth-child(3){
-    background: linear-gradient(to right, rgb(236, 219, 190) 50%, rgb(146, 108, 71) 50%);
-
+.themes:nth-child(3) {
+  background: linear-gradient(
+    to right,
+    rgb(236, 219, 190) 50%,
+    rgb(146, 108, 71) 50%
+  );
 }
 .quran-section {
-    background-color: var(--body-background);
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 40px;
-    padding-bottom: 100px;
+  background-color: var(--body-background);
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 
 .quran-pages {
-    background-color: var(--page-background);
-    width: 35vw;
-    border: rgb(179, 163, 143) solid 4px;
-    transition: all 0.3s ease-in;
-
+  background-color: var(--page-background);
+  width: 35vw;
+  border: rgb(179, 163, 143) solid 4px;
+  transition: all 0.3s ease-in;
 }
 
-@media screen and (max-width:1200px) {
-    .quran-pages {
-        width: 60vw;
-    }
+@media screen and (max-width: 1200px) {
+  .quran-pages {
+    width: 60vw;
+  }
 }
 
-@media screen and (max-width:700px) {
-    .quran-pages {
-        width: 90vw;
-    }
+@media screen and (max-width: 700px) {
+  .quran-pages {
+    width: 90vw;
+  }
 }
 
-@media screen and (max-width:450px) {
-    .quran-pages {
-        width: 95vw;
-    }
+@media screen and (max-width: 450px) {
+  .quran-pages {
+    width: 95vw;
+  }
 }
